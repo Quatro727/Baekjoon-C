@@ -36,5 +36,12 @@ int main(){
         }
         printf("\n");
     }
+
+    //6. 메모리 반납
+    free(ptr_a);
+    free(ptr_b);
+    ptr_a=NULL;
+    ptr_b=NULL;
+    
     return 0;
 }
