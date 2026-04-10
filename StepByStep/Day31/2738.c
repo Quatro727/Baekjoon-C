@@ -2,9 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define MAX
+
 int main(){
     int n,m;
-
+    
     //1. 행렬의 크기(n:행, m:열)
     scanf("%d %d", &n, &m);
 
@@ -44,4 +46,9 @@ int main(){
     ptr_b=NULL;
     
     return 0;
+    /*
+    scanf()가 위험한 것은 맞지만 그렇다고 무작정 fgets()로 모든 입력을 처리하려는 것은 
+    오히려 훨씬 더 복잡한 문제를 야기한다. 필요한 경우에는 scanf()를 적절히 사용하는 것도
+    충분히 고려해볼만한 하다.
+    */
 }
